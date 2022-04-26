@@ -1,0 +1,75 @@
+.banner-main{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(bbq.jpg);
+    
+}
+
+.banner-pannel{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-gap: 2em;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding:2rem;
+
+}
+
+
+
+.banner-container-2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container-2 button{
+    
+    background: red;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.banner-container-1 p{
+    color: white;
+}
+
+.banner-title{
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width:1050px){
+    .banner-pannel{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:630px){
+    .banner-main{
+        
+        padding: 1rem;
+    
+    }
+
+    .banner-title{
+        
+        align-items: center;
+        text-align: center;
+    }
+    
+}

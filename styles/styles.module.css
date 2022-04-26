@@ -1,0 +1,14 @@
+.block_1 {
+    width: 20vw;
+    height: 20vw;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .container_1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+  

@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width:200px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    overflow: hidden;
+    background: pink;
+    box-shadow: 10px 10px 5px lightblue;
+    border: 1px solid lightblue;
+}
+
+.highlight-line{
+    
+    padding: 0.1rem;
+    
+    background: #FFE34E;
+    border-radius: 8px;
+}
+
+.card-text{
+    padding: 1rem;
+    background: white;
+    color: black;
+}
+
+.card-text h1{
+    color:black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.image { 
+    position: relative; 
+    width: 100%; /* for IE 6 */
+ }
+ 
+ h2 { 
+   position: absolute; 
+   top: 300px; 
+   left: 0; 
+   width: 100%; 
+ }
+ 
+ h2 span { 
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px; 
+ }
+
+.image-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-main{
+    margin: 2rem;
+    text-align: center;
+}
+
+.prev{
+    background: red;
+    opacity: 300;
+    padding: 2rem;
+    border-radius: 60px;
+}
+
+.next{
+    background: red;
+    opacity: 300;
+    padding: 2rem;
+    border-radius: 60px;
+}
