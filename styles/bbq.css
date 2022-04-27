@@ -1,0 +1,307 @@
+
+  
+  .Div2 {
+    min-height: 500px;
+    width: 100%;
+    margin-right: 5px;
+    
+    
+    position: absolute;
+    height: 1000px;
+    
+  }
+  
+  .Div3 {
+      display: flex;
+      flex-direction: column;
+      
+      
+    border: 1px solid #ddd;
+    width: 26%;
+    padding: 2rem 2rem 6rem 2rem;
+    
+    margin: 1rem;
+    background: white;
+    border-radius: 12px;
+    min-height: 50px;
+    top: 0;
+    margin-top: 8rem;
+    position: fixed;
+    right: 100px;
+  }
+
+
+  .Div3 h1{
+      text-align: center;
+      font-family: var(--font-family);
+  }  
+
+  .Div3 p{
+      margin-bottom: 1rem;
+      font-family: var(--font-family);
+      color: rgb(120, 120, 120);
+  
+  }
+
+  .location p {
+    color:gray;
+    
+    font-size: 20px;
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgb(255, 248, 38); /* Safari */  
+    text-decoration-color: rgb(255, 248, 38);
+    text-decoration-thickness: 5px;
+    text-underline-offset: 2px;
+  }
+
+  .date-panel{
+      display: flex;
+      padding: 1rem;
+  }
+
+  .date-panel div{
+      margin-right: 2rem;
+      
+      padding: 0.5rem;
+      border-radius: 15px;
+      border: 2px solid orange;
+  }
+
+  .date-panel div:active {
+    background-color: orange;
+  }
+
+  .banner{
+      background: red;
+      
+        background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(bbq.jpg);
+      padding:2rem;
+  }
+
+  .banner-info{
+      margin-top: 20rem;
+      margin-bottom: 2rem;
+      margin-left: 5rem;
+      color: white;
+      width: 40%;
+  }
+
+  .banner-icons{
+      display: flex;
+      justify-content: flex-start;
+      align-items:center;
+      
+  }
+
+  .banner-icons div{
+    margin-right: 2rem;
+    
+}
+
+.icon-span{
+    margin-right: 0.5rem;
+}
+
+.btn-solid{
+  
+    background: orange;
+    padding: 1rem;
+    border-radius: 20px;
+    color: white;
+    
+  }
+
+  .btn-light{
+  
+    
+    padding: 1rem;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid orange;
+  }
+
+  .btn-blank{
+  
+    
+    
+    border-radius: 20px;
+    
+    background: transparent;
+    
+  }
+
+  .highlight{
+      color: orange;
+  }
+
+  .Menu{
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 2em;
+      margin-left: 5rem;
+      padding: 2rem;
+     
+  }
+
+  .Menu div {
+      background : transparent;
+      margin-right: 2rem;
+  }
+
+  .Menu-Nav{
+      display: flex;
+      border-bottom: 2px solid rgb(243, 243, 243);
+  }
+
+  .Menu-Labels{
+      font-weight: 300;
+      font-size: 18px;
+  }
+
+  .Menu-info {
+    margin-top: 2rem;
+    background: red;
+  }
+
+ .Menu-details div{
+    border-bottom: 3px solid orange;
+   
+ }
+
+ .Menu-info-mobile{
+     display: none;
+ }
+
+ .Menu-Nav-mobile{
+     display: none;
+ }
+
+ @media screen and (max-width:630px){
+    .Div3{
+        
+        display: none;
+    
+    }
+
+    .Menu-Panel-2{
+        display: none;
+    }
+    .banner-info {
+        
+        padding-left: 0;
+        margin-left: 0;
+        width: fit-content;
+        
+      }
+
+      .banner-title{
+        font-size: 24px;
+        text-align: left;
+      }
+
+      .banner-icons{
+          display: none;
+      }
+    
+      .Menu{
+          margin-left: 0rem;
+      }
+
+     .bbq-text-heading-light{
+         font-size: 18px;
+         font-weight: 500;
+     }
+
+      .Menu-details{
+          display: flex;
+          flex-direction: column;
+          
+          
+      }
+
+      .Menu div {
+        background : transparent;
+        margin-right:0;
+        
+    }
+
+      .bbq-text-heading-1{
+        font-weight: 600;
+        font-size: 30px;
+      }
+
+      .Menu{
+        display: flex;
+      }
+
+      .Menu-Panel-2{
+          background: yellowgreen;
+          display: none;
+      }
+
+    .btn-solid{
+        padding: 0.4rem;
+    }
+     
+    .btn-light{
+  
+        border-radius: 25px;
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        
+      }
+
+      .banner-icons-mobile{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+      }
+
+      .banner-icons-mobile div{
+          margin-right: 0.8rem;
+      }
+
+      .icon-span{
+          margin-right: 0.1rem;
+      }
+     
+      .bbq-text-dec{
+          font-size: 24px;
+      }
+
+      .Menu-info-mobile{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        background: red;
+    }
+    .Menu-info{
+        display: none;
+        
+    }
+
+    .bbq-text-heading-2{
+        font-size: 28px;
+    }
+
+    .icon-span-menu{
+        margin-right: 0.8rem;
+    }
+
+    .Menu-details div{
+        padding-bottom: 1rem;
+    }
+
+   .Menu-Nav{
+       display: none;
+   }
+
+   .Amenities-panel{
+       display: grid;
+       grid-template-columns: 3fr 1fr;
+   }
+
+}

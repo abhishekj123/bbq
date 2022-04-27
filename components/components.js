@@ -1,0 +1,10 @@
+export { default as Navbar } from './NavbarComponent/Navbar'
+export { default as Banner } from './BannerComponent/Banner'
+export { default as Special } from './SpecialComponent/Special'
+export { default as Subcard } from './SubCard/Subcard'
+export { default as Imageslider } from './ImageSliderComponent/Imageslider'
+export { default as ImageSlide } from './ImageSliderComponent/ImageSlide'
+export { default as Slider } from './SliderComponent/Slider'
+export { default as Location } from './LocationComponent/Location'
+export { default as Animate } from './AnimateComponent/Animate'
+

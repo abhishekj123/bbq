@@ -1,0 +1,21 @@
+.special-main{
+    background: var(--base-hightlight-color);
+}
+
+.special-panel{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:630px){
+    .special-main{
+        
+        padding: 1rem;
+    
+    }
+    
+}
+

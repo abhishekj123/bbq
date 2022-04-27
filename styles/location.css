@@ -1,0 +1,39 @@
+.location-main{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(bbq.jpg);
+    
+}
+
+.location-pannel{
+    text-align: center;
+    
+}
+
+.location-title{
+    display: flex;
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-align: center;
+}
+
+.location-stack{
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    background: transparent;
+    margin:2rem;
+    border-radius: 12px;
+    padding: 1rem;
+    
+}
