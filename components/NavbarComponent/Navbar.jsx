@@ -4,12 +4,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { useSession, signIn, signOut } from "next-auth/react"
 // npm i -S @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons @fortawesome/pro-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/pro-solid-svg-icons @fortawesome/pro-light-svg-icons @fortawesome/pro-duotone-svg-icons @fortawesome/free-brands-svg-icons
 
 
 const Navbar = () => {
-
+  const { data: session } = useSession()
   const [toggleMenu, settoggleMenu] = useState(false)
 
   return (
@@ -23,12 +23,17 @@ const Navbar = () => {
             <Menu/>
           </div>
           <div className='Navbar-sign'>
-          <div className='sign-main'>
-            <h1 className='btn-base'><a href='/SignIn'>SignIn</a></h1>
-            <h1 className='btn-base highlight-red'>SignUp</h1>
-          </div>  
+          
             <h1 className='logo-base'><FontAwesomeIcon icon={faCartShopping} size="lg"/></h1>
             <h1 className='logo-base'><FontAwesomeIcon icon={faPhone}  size="lg" /></h1>
+            <div className='sign-main'>
+      
+            { session 
+                  ? <h1 className='btn-base highlight-red'><button onClick={() => signOut()}>Sign out</button></h1>
+                  : <h1 className='btn-base'><button onClick={() => signIn()}>Sign in</button></h1>
+            }
+           
+            </div> 
           </div>
           <div className='navbar-menu-mobile'>
             { toggleMenu 
