@@ -1,0 +1,14 @@
+.picker {
+    grid-column: 5/10;
+    grid-row: 2/4;
+    background: rgb(100, 237, 114);
+  
+    
+  }
+
+
+  .picker input{
+    border: none;
+  
+    
+  }

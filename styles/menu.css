@@ -1,0 +1,60 @@
+.Menu-mobile{
+    
+    
+    
+    border-radius: 12px;
+}
+
+.Menu-panel{
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr 2fr ;
+    
+}
+
+.menu-today{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 223, 165);
+    background: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: none;
+}
+
+.menu-today span{
+    display: flex;
+}
+
+.Menu-title{
+    font-weight: 800;
+    color: gray;
+}
+
+.Menu-detail{
+    border: 2px solid rgb(255, 223, 165);
+    background: rgb(255, 223, 165);
+    border-top: none;
+    padding: 1rem;
+}
+
+.Menu-Subpanel{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+}
+
+.Menu-Subpanel-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 219, 153);
+}
+
+
+.icon-align{
+    color: grey;
+    margin:0.5rem;
+}
