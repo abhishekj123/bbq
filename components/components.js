@@ -7,4 +7,7 @@ export { default as ImageSlide } from './ImageSliderComponent/ImageSlide'
 export { default as Slider } from './SliderComponent/Slider'
 export { default as Location } from './LocationComponent/Location'
 export { default as Animate } from './AnimateComponent/Animate'
-
+export { default as Menu } from './MenuComponent/Menu'
+export { default as Menusubpanel } from './MenuSubComponent/Menusubpanel'
+export { default as Gallery } from './GalleryComponent/Gallery'
+export { default as DateElement } from './DatePickerComponent/DateElement'

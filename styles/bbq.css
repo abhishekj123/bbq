@@ -14,12 +14,12 @@
   .Div3 {
       display: flex;
       flex-direction: column;
-      
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       
     border: 1px solid #ddd;
     width: 26%;
     padding: 2rem 2rem 6rem 2rem;
-    
+    border: none;
     margin: 1rem;
     background: white;
     border-radius: 12px;
@@ -72,7 +72,7 @@
   }
 
   .banner{
-      background: red;
+      
       
         background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
@@ -95,6 +95,10 @@
       justify-content: flex-start;
       align-items:center;
       
+  }
+
+  .banner-icons-mobile{
+      display: none;
   }
 
   .banner-icons div{
@@ -147,15 +151,19 @@
      
   }
 
-  .Menu div {
-      background : transparent;
-      margin-right: 2rem;
+  .Menu-Panel-1 {
+      
+      margin-right: 8rem;
   }
 
   .Menu-Nav{
       display: flex;
       border-bottom: 2px solid rgb(243, 243, 243);
   }
+
+  .Menu-Nav div{
+    margin-right: 2rem;
+}
 
   .Menu-Labels{
       font-weight: 300;
@@ -164,10 +172,11 @@
 
   .Menu-info {
     margin-top: 2rem;
-    background: red;
+    
   }
 
- .Menu-details div{
+ .Menu-details-subpanel{
+     
     border-bottom: 3px solid orange;
    
  }
@@ -178,6 +187,11 @@
 
  .Menu-Nav-mobile{
      display: none;
+ }
+
+ .Amenities-subpanel_2{
+     display: flex;
+     justify-content: center;
  }
 
  @media screen and (max-width:630px){
@@ -214,6 +228,7 @@
      .bbq-text-heading-light{
          font-size: 18px;
          font-weight: 500;
+         margin-right: 2rem;
      }
 
       .Menu-details{
@@ -224,7 +239,7 @@
       }
 
       .Menu div {
-        background : transparent;
+        
         margin-right:0;
         
     }
@@ -276,7 +291,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 2rem;
-        background: red;
+        
     }
     .Menu-info{
         display: none;

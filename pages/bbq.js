@@ -1,15 +1,16 @@
 import React from 'react'
-import { Navbar , Banner , Special , Imageslider , ImageSlide , Slider , Location , Animate} from '../components/components'
+
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import { faBowlRice } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faPersonWalking } from "@fortawesome/free-solid-svg-icons";
 import { faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
-
+import { Navbar , Menu , Gallery } from '../components/components' 
 
 const bbq = () => {
   return (
@@ -20,6 +21,7 @@ const bbq = () => {
         <Navbar/>
     <div className='banner'>
         <div className='banner-info'>
+        
             <h1 className='banner-title'>
                 Restaurant in
                 Trivandrum Panachamootil Square
@@ -61,6 +63,7 @@ const bbq = () => {
         </div>
     </div>
     <div className='Menu'>
+    
         <div className='Menu-Panel-1'>
             <div className='Menu-Nav'>
                 <div className='bbq-text-heading-light'><a href='#overview'>OVERVIEW</a></div>
@@ -73,16 +76,16 @@ const bbq = () => {
             <div id="overview" className='Menu-info'>
                 <h1 className='bbq-text-heading-1'>OVERVIEW</h1>
                 <div className='Menu-details'>
-                    <div> 
+                    <div > 
                         <p className='bbq-text-heading-2'><span className='icon-span'><FontAwesomeIcon icon={faMapLocationDot} size="1x" className="highlight"/></span>Address </p>
                         <p className='bbq-text-dec'>2nd Floor, Virginia Mall, Varthur Rd, Varthur Kodi, Palm Meadows, Ramagondanahalli, Whitefield, Bengaluru,560066</p>
                     </div>
-                    <div>
+                    <div >
                         <p className='bbq-text-heading-2'><span className='icon-span'><FontAwesomeIcon icon={faBowlRice} size="1x" className="highlight"/></span>Restaurant Info</p>
                         <p>9071569991
                         feedback@barbequenation.com</p>
                     </div>
-                    <div>
+                    <div >
                         <p className='bbq-text-heading-2'><span className='icon-span'><FontAwesomeIcon icon={faClock} size="1x" className="highlight"/></span>Open hour</p>
                         <p>
                         12:00 pm to 04:00 pm
@@ -107,64 +110,56 @@ const bbq = () => {
             <div id="overview" className='Menu-info-mobile'>
                 <h1 className='bbq-text-heading-1'>OVERVIEW</h1>
                 <div className='Menu-details'>
-                    <div> 
+                    <div className='Menu-details-subpanel'> 
                         <p className='bbq-text-heading-2'><span className='icon-span-menu'><FontAwesomeIcon icon={faMapLocationDot} size="1x" className="highlight"/></span>Address </p>
                         <p className='bbq-text-dec'>2nd Floor, Virginia Mall, Varthur Rd, Varthur Kodi, Palm Meadows, Ramagondanahalli, Whitefield, Bengaluru,560066</p>
                     </div>
-                    <div>
+                    <div className='Menu-details-subpanel'>
                         <p className='bbq-text-heading-2'><span className='icon-span-menu'><FontAwesomeIcon icon={faBowlRice} size="1x" className="highlight"/></span>Restaurant Info</p>
                         <p className='bbq-text-dec'>9071569991
                         feedback@barbequenation.com</p>
                     </div>
-                    <div>
+                    <div className='Menu-details-subpanel'>
                         <p className='bbq-text-heading-2'><span className='icon-span-menu'><FontAwesomeIcon icon={faClock} size="1x" className="highlight"/></span>Open hour</p>
                         <p className='bbq-text-dec'>
                         12:00 pm to 04:00 pm
 06:30 pm to 11:00 pm
                         </p>
                     </div>
-                    <div>
-                        <p className='bbq-text-heading-2'><span className='icon-span-menu'><FontAwesomeIcon icon={faClock} size="1x" className="highlight"/></span>Amenities </p>
+                    <div className='Menu-details-subpanel'>
+                        <p className='bbq-text-heading-2'><span className='icon-span-menu'><FontAwesomeIcon icon={faPersonWalking} size="1x" className="highlight"/></span>Amenities </p>
                         <div className='Amenities-panel'>
-                        <div className='Amenities-subpanel'> <p className='bbq-text-dec'>Car Parking - </p></div>
-                        <div className='Amenities-subpanel'><p className='text-highlight-yes'>Available</p></div>
+                        <div className='Amenities-subpanel_1'> <p className='bbq-text-dec'>Car Parking - </p></div>
+                        <div className='Amenities-subpanel_2'><p className='text-highlight-yes'>Available</p></div>
                         
                         </div>
                         <br></br>
                         
                         <div className='Amenities-panel'>
-                        <div className='Amenities-subpanel'> <p className='bbq-text-dec'>Lift Facilities - </p></div>
-                        <div className='Amenities-subpanel'><p className='text-highlight-yes'>Available</p></div>
+                        <div className='Amenities-subpanel_1'> <p className='bbq-text-dec'>Lift Facilities - </p></div>
+                        <div className='Amenities-subpanel_2'><p className='text-highlight-yes'>Available</p></div>
                         
                         </div>
                         <br></br>
-                        <p className='bbq-text-dec'>Door delivery - <span className='text-highlight-no'>Available</span></p>
+                        <div className='Amenities-panel'>
+                        <div className='Amenities-subpanel_1'> <p className='bbq-text-dec'>Door delivery - </p></div>
+                        <div className='Amenities-subpanel_2'><p className='text-highlight-no'>Available</p></div>
+                        
+                        </div>
+                        
                     </div>
                     
 
                 </div>
             </div>
-            <div id="menu"  className='Menu-info-mobile'>
+            <div   className='Menu-info-mobile'>
                 <h1 className='bbq-text-heading-1'>MENU</h1>
-                <ul className="nav">
-                    <li className="nav-item">
-                        <a className="nav-link active" href="#">Active</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
+                <Menu/>
                 </div>
                 <div id="offer-promotion" className='Menu-info-mobile'>
                     <h1 className='bbq-text-heading-1'>OFFER & PROMOTION</h1>
                 </div>
-                <div id="gallery" className='Menu-info-mobile'>
+                <div  className='Menu-info-mobile'>
                     <h1 className='bbq-text-heading-1'>GALLERY</h1>
                 </div>
                 <div id="about" className='Menu-info-mobile'>
@@ -172,32 +167,21 @@ const bbq = () => {
                 </div>
             <div id="menu"  className='Menu-info'>
                 <h1 className='bbq-text-heading-1'>MENU</h1>
-                <ul className="nav">
-                    <li className="nav-item">
-                        <a className="nav-link active" href="#">Active</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
+                <Menu/>
                 </div>
                 <div id="offer-promotion" className='Menu-info'>
                     <h1 className='bbq-text-heading-1'>OFFER & PROMOTION</h1>
+                    
                 </div>
                 <div id="gallery" className='Menu-info'>
                     <h1 className='bbq-text-heading-1'>GALLERY</h1>
+                    <Gallery/>
                 </div>
                 <div id="about" className='Menu-info'>
                     <h1 className='bbq-text-heading-1'>ABOUT RESTAURANT</h1>
                 </div>
             </div>
-            <div className='Menu-Panel-2'>Hi there</div>
+            <div className='Menu-Panel-2'></div>
     </div>
   
   

@@ -24,7 +24,7 @@ const Navbar = () => {
           </div>
           <div className='Navbar-sign'>
           <div className='sign-main'>
-            <h1 className='btn-base'>SignIn</h1>
+            <h1 className='btn-base'><a href='/SignIn'>SignIn</a></h1>
             <h1 className='btn-base highlight-red'>SignUp</h1>
           </div>  
             <h1 className='logo-base'><FontAwesomeIcon icon={faCartShopping} size="lg"/></h1>
@@ -65,7 +65,7 @@ export default Navbar
 const Menu = () => (
   <>
   <h1><a href='#home'>Specials</a></h1>
-  <h1><a href='#wgpt3'>Menu</a></h1>
+  <h1><a href='/Ordernow'>Order Now</a></h1>
   <h1><a href='#possibility'>Locations</a></h1>
   </>
 )
