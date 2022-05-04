@@ -1,5 +1,5 @@
 import dbConnect from '../../../lib/dbConnect'
-import Note from '../../../models/Schema'
+import Order from '../../../models/Schema'
 
 dbConnect();
 
@@ -9,16 +9,16 @@ export default async (req,res) => {
     switch(method) {
         case 'GET' :
             try {
-                const notes = await Note.find()
-                res.status(200).json({success:true, data:notes})
+                const orders = await Order.find()
+                res.status(200).json({success:true, data:orders})
             } catch (error) {
-                res.status(400).json({success:false})
+                res.status(400).json({success:false}) 
             }
             break;
         case 'POST' :
             try {
-                const notes = await Note.create(req.body)
-                res.status(201).json({success:true, data:notes})
+                const orders = await Order.create(req.body)
+                res.status(201).json({success:true, data:orders})
             } catch (error) {
                 res.status(400).json({success:false,data:error})
             }
