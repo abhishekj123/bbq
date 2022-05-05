@@ -11,14 +11,62 @@
 
 .Order-Panel-1{
     border-radius: 12px;
-    height: 80vh;
+    height: 85vh;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-top: 5px solid orange;
+    border-bottom:  5px solid orange;;
+}
+
+.Order-Panel-2{
+    
+    border-radius: 12px;
+    
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.Order-Panel-2{
+.Order-Item-Panel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-radius: 12px;
-    height: 80vh;
-    background-color: white;
+    height: 75vh;
+}
+
+.Paginate-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.ItemCard{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: white;
+    width: 12rem;
+    margin:1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    position:relative
+    
+}
+
+.ItemCard-Title,
+.ItemCard-Desc{
+    padding: 0 0 0 0.5rem;
+}
+
+.ItemCard-Bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.ItemCard-Bottom button{
+    margin-right:1rem;
+    margin-bottom: 0.5rem;
+    background: orange;
+    padding: 0.3rem;
+    border-radius: 8px;
 }
