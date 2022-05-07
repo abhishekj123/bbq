@@ -1,0 +1,70 @@
+.Item-main{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding:1rem 6rem 1rem 6rem;
+    background: white;
+
+}
+
+.Item-panel-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding:5rem 1rem 5rem 1rem;
+    border-radius: 12px;
+    
+    
+}
+
+.Item-panel-2{
+    background: white;
+    padding:0 5rem 0 5rem;
+}
+
+.Item-Title{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: var(--font-family);
+}
+
+.add-to-cart{
+    background: orange;
+    padding: 0.5rem;
+    border-radius: 12px;
+}
+
+.line{
+    background: rgb(208, 208, 208);
+    padding: 0.05rem;
+}
+
+.high-light{
+    font-size: large;
+    font-weight: 800;
+    color: gray;
+}
+
+.text-light{
+    font-size: large;
+    font-weight: 300;
+}
+
+.text-bold{
+    font-weight: 700;
+    color: green;
+}
+
+.spaceing{
+    margin: 0 1rem 0 1rem;
+}
+
+.secoundary-panel{
+    background: white;
+    margin-left:6rem;
+    margin-right:6rem;
+}
+
+.description-panel{
+    background: blue;
+}

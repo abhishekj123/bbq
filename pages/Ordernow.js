@@ -8,7 +8,7 @@ import { Pagination } from '@mui/material';
 const Ordernow = () => {
 
     const [orderItem, setorderItem] = useState([])
-    const [page, setPage] = useState(1)
+    const [page, setPage] = useState(0)
 
    
 
@@ -43,7 +43,7 @@ const Ordernow = () => {
             {
                 orderItem.map(a => 
                    
-                    <ItemCard name={a.title} desc={a.description}/>
+                    <ItemCard name={a.title} desc={a.description} id={a._id}/>
                     )
             }
             
@@ -74,6 +74,7 @@ export default Ordernow
 const ItemCard = (props) => {
     return (
     <div className='ItemCard'>
+    <a href={'http://localhost:3000/items/'+`${props.id}`}>
     <Image
       src='https://firebasestorage.googleapis.com/v0/b/jetsea.appspot.com/o/yahts%2Fyaht.png?alt=media&token=dc4c2a5f-655c-4317-be80-68d6580c5a99'
       alt="Picture of the author"
@@ -84,11 +85,12 @@ const ItemCard = (props) => {
         <h1 className='bbq-text-heading-1'>{props.name}</h1>
     </div>
     <div className='ItemCard-Desc'>
-        <p>{props.desc}</p>
+        <p className='desc-limit'>{props.desc}</p>
     </div>
     <div className='ItemCard-Bottom'>
         <button>Add to Cart</button>
     </div>
+    </a>
     </div>
     )
 }

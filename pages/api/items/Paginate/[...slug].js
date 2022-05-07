@@ -1,5 +1,5 @@
 import dbConnect from '../../../../lib/dbConnect'
-import Item from '../../../../models/Schema'
+import Item from '../../../../models/Item'
 import { useRouter } from 'next/router'
 
 dbConnect();
