@@ -13,3 +13,6 @@ export { default as Gallery } from './GalleryComponent/Gallery'
 export { default as DateElement } from './DatePickerComponent/DateElement'
 export { default as SimpleCollapse } from './ShowmoreComponent/Showmore'
 export { default as Card } from './CardComponent/Card'
+export { default as Mainmenu } from './MainmenuComponent/Mainmenu'
+export { default as MenuitemCard } from './MainmenuComponent/MenuitemCard'
+

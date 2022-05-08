@@ -1,7 +1,7 @@
 import React, { useEffect , useState } from 'react'
 import { useRouter } from "next/dist/client/router"
 import axios from 'axios'
-import { Navbar , Menu , Gallery , SimpleCollapse , Card} from '../../components/components' 
+import { Navbar , Menu , Gallery , SimpleCollapse , Card, Subcard, Mainmenu } from '../../components/components' 
 import Image from 'next/image'
 import Rating from '@mui/material/Rating';
 //import Carousel from 'react-material-ui-carousel'
@@ -47,7 +47,7 @@ const Item = ({ item }) => {
                 src='https://firebasestorage.googleapis.com/v0/b/jetsea.appspot.com/o/yahts%2Fyaht.png?alt=media&token=dc4c2a5f-655c-4317-be80-68d6580c5a99'
                 alt="Picture of the author"
                 width="450px"
-                height="300px"
+                height="200px"
             />
         </div>
         <div className='Item-panel-2'>
@@ -65,22 +65,38 @@ const Item = ({ item }) => {
             <button className='add-to-cart'>Add to cart</button>
             <br></br>
             <br></br>
-            <p className='high-light'>ADD ON</p>
+            <p className='high-light'>Description</p>
             <div className='description-panel'>
             
+            
             </div>
-            <SimpleCollapse/>
+           
             
         </div>
+        
     </div>
     <div className='secoundary-panel'>
+    
+   
+    <p className='high-light'>Add On's</p>
+    <Carousel itemsToShow={4}>
+                <Subcard/>
+                <Subcard/>
+                <Subcard/>
+                <Subcard/>
+                <Subcard/>
+                <Subcard/>
+                <Subcard/>
+                <Subcard/>
+                <Subcard/>
+
+    </Carousel>
+    <br></br>
     <div className='line'></div>
     <br></br>
-    <p className='high-light'>Description</p>
-    <br></br>
-    <div className='description-panel'>
-    <Slider arrayItem={addonItem}/>
-    </div>
+    
+        <Mainmenu/>
+    
     <br></br>
     </div>
         

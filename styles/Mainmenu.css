@@ -1,0 +1,58 @@
+.Mainmenu{
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 16px;
+}
+
+.menu-panel-1{
+    background: white;
+    overflow:scroll; 
+    height:400px;
+    overflow-x: hidden;
+    
+}
+
+
+.menu-panel-1 h1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 2rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 208, 120); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: orange; 
+  }
+
+
+
+.menu-panel-2{
+    background: white;
+    overflow:scroll; 
+    height:400px;
+    overflow-x: hidden;
+}
+
+.menu-panel-3{
+    background: white;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+}

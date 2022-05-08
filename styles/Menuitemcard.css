@@ -1,0 +1,12 @@
+.Menu-item-card-main{
+    background: pink;
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.Menu-item-card-image{
+    
+    overflow: hidden;
+    background: red;
+}

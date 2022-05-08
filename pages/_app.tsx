@@ -15,6 +15,8 @@ import '../styles/Item.css'
 import "../styles/react-datepicker.css";
 import "../styles/orderPanel.css";
 import "../styles/card.css";
+import "../styles/Menuitemcard.css";
+import "../styles/Mainmenu.css";
 import '../styles/styles.module.css'
 import type { AppProps } from 'next/app'
 import "@material-tailwind/react/tailwind.css";
