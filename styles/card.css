@@ -1,0 +1,40 @@
+.Card{
+    background: white;
+    overflow: hidden;
+    width: 13rem;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.Card-Title{
+    padding: 0.8rem;
+}
+
+.Card-Title h1{
+    font-weight: 700;
+    font-size: medium;
+}
+
+.Card-description{
+    padding: 0.8rem;
+}
+
+.Card-description p{
+    font-size: 14px;
+}
+
+.Card-Bottom{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.8rem;
+}
+
+.Card-Bottom button{
+    background: orange;
+    padding: 0.6rem;
+    border-radius: 8px;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+}

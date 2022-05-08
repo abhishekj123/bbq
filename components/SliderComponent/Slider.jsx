@@ -1,39 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ImageSlide  from '../ImageSliderComponent/ImageSlide'
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button , Card , CardContent , Box , Typography , CardActions , CardMedia  } from '@mui/material'
+import bbq from '../media/bbq2.jpg'
 
-
-const Slider = () => {
-  const items = [
-    {
-        name: "Random Name #1",
-        description: "Probably the most random thing you have ever seen!"
-    },
-    {
-        name: "Random Name #2",
-        description: "Hello World!"
-    }
-]
-
+const Slider = (props) => {
+  
+    const [array, setarray] = useState([...props.arrayItem])
+console.log(array)
 return (
 <div className='Gallery-Panel'>
 <Carousel>
-    <div>
-    <Image
-        src={bbq1}
-        alt="Picture of the author"
-        width="350px"
-        height="300px"
-    />
-    <Image
-        src={bbq1}
-        alt="Picture of the author"
-        width="350px"
-        height="300px"
-    />
-    </div>
-    <div><CardFragment/></div>
+    <div>hello</div>
+    <div>hai</div>
 </Carousel>
 
 </div>
@@ -46,12 +25,8 @@ function Item(props)
 {
     return (
         <Paper>
-            <h2>{props.item.name}</h2>
-            <p>{props.item.description}</p>
-
-            <Button className="CheckButton">
-                Check it out!
-            </Button>
+            <h2>{props.name}</h2>
+            
         </Paper>
     )
 }
@@ -59,7 +34,7 @@ function Item(props)
 function CardFragment(){
     return (
         <div >
-        
+        hello
         </div>
     )
 }

@@ -76,7 +76,7 @@ const ItemCard = (props) => {
     <div className='ItemCard'>
     <a href={'http://localhost:3000/items/'+`${props.id}`}>
     <Image
-      src='https://firebasestorage.googleapis.com/v0/b/jetsea.appspot.com/o/yahts%2Fyaht.png?alt=media&token=dc4c2a5f-655c-4317-be80-68d6580c5a99'
+      src="https://firebasestorage.googleapis.com/v0/b/restuarantsig.appspot.com/o/restimage%2FNoodles3.png?alt=media&token=5e02bda3-0ad0-40a5-aa45-46541fd28a55"
       alt="Picture of the author"
       width="350px"
       height="200px"

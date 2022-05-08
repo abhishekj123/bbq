@@ -1,17 +1,38 @@
 import React, { useEffect , useState } from 'react'
 import { useRouter } from "next/dist/client/router"
 import axios from 'axios'
-import { Navbar , Menu , Gallery , SimpleCollapse } from '../../components/components' 
+import { Navbar , Menu , Gallery , SimpleCollapse , Card} from '../../components/components' 
 import Image from 'next/image'
 import Rating from '@mui/material/Rating';
+//import Carousel from 'react-material-ui-carousel'
+import Carousel from 'react-elastic-carousel'
 
 const Item = ({ item }) => {
 
     const router = useRouter();
     const [itemData, setitemData] = useState(...item)
-    
+    const [addonItem, setaddonItem] = useState([])
+    const [page, setPage] = useState(0)
     const { id } = router.query
 
+    useEffect(() => {
+
+        
+        const loadPost = async () => {
+  
+            const response = await axios.get(
+            "http://localhost:3000/api/items/Paginate/8/0");
+            console.log('----------- a --------------')
+            console.log(response.data.data)
+            setaddonItem([...response.data.data])
+            console.log('----------- a --------------')
+        }
+        loadPost();
+        console.log('----------1---------------')
+
+        console.log(addonItem)
+        console.log('-----------1--------------')
+    }, [])
     
 
     
@@ -44,7 +65,7 @@ const Item = ({ item }) => {
             <button className='add-to-cart'>Add to cart</button>
             <br></br>
             <br></br>
-            <p className='high-light'>Description</p>
+            <p className='high-light'>ADD ON</p>
             <div className='description-panel'>
             
             </div>
@@ -58,7 +79,7 @@ const Item = ({ item }) => {
     <p className='high-light'>Description</p>
     <br></br>
     <div className='description-panel'>
-    the description
+    <Slider arrayItem={addonItem}/>
     </div>
     <br></br>
     </div>
@@ -81,3 +102,35 @@ export async function getServerSideProps(router) {
       }, // will be passed to the page component as props
     }
   }
+
+
+
+const Slider = (props) => {
+  
+    
+    console.log("----------- ARRAY ITEM ------------------")
+    let itemArray=[...props.arrayItem]
+    console.log(itemArray)
+    {
+        itemArray.map(x => {
+            console.log
+        })
+    }
+    console.log("----------- ARRAY ITEM ------------------")
+    return (
+        <div className='addon-slider'>
+            <Carousel itemsToShow={5}>
+            {
+                itemArray.map(x => 
+                    
+                    <Card title={x.title} id={x._id} description={x.description}/>
+                )
+            }
+                
+            
+            </Carousel>
+
+</div>
+)
+}
+
