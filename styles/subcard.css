@@ -1,6 +1,6 @@
 .Subcard-panel{
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 0.5fr 5fr 1.5fr;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 15px 0px;
     background: rgb(255, 255, 255);
     margin: 1rem;
@@ -10,7 +10,41 @@
 }
 
 .Subcard-panel-1{
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     overflow: hidden;
+}
+
+.Subcard-panel-2{
+    background: white;
+    padding: 0.5rem;
+}
+
+.Subcard-Heading{
+    background: white;
+}
+
+.Subcard-Heading h1{
+    font-size: large;
+}
+
+.Subcard-Description{
+    font-size: small;
+    margin-top: 0.4rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.Subcard-panel-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Subcard-panel-3 button{
+    font-size: small;
+    font-weight: 500;
+    background: orange;
+    padding: 0.8rem;
+    border-radius: 12px;
 }

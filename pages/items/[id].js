@@ -40,32 +40,32 @@ const Item = ({ item }) => {
   return (
     <div>
         <Navbar/>
-    <br></br>
+   
     <div className='Item-main'>
         <div className='Item-panel-1'>
             <Image
-                src='https://firebasestorage.googleapis.com/v0/b/jetsea.appspot.com/o/yahts%2Fyaht.png?alt=media&token=dc4c2a5f-655c-4317-be80-68d6580c5a99'
+                src={itemData.pic}
                 alt="Picture of the author"
                 width="450px"
-                height="200px"
+                height="400px"
             />
         </div>
         <div className='Item-panel-2'>
-            <h1 className='Item-Title'>{itemData.title}</h1>
+            <h1 className='Item-Title color-white'>{itemData.title}</h1>
             <br></br>
-            <p>{itemData.description}</p>
+            <p className='color-gray'>{itemData.description}</p>
                 <br></br>
                 
             <Rating name="read-only" value='4' readOnly />
             <div>
-            <p className='text-light'>Quantity</p>
+            <p className='text-light color-white'>Quantity</p>
             </div>
-            <p className='text-light'>M.R.P   : <span className='text-bold'><span>$</span> {itemData.price}</span>    <span className='spaceing'>Inclusice of all taxes</span></p>
+            <p className='text-light color-white'>M.R.P   : <span className='text-bold color-white'><span>$</span> {itemData.price}</span>    <span className='spaceing color-white'>Inclusice of all taxes</span></p>
             <br></br>
             <button className='add-to-cart'>Add to cart</button>
             <br></br>
             <br></br>
-            <p className='high-light'>Description</p>
+            <p className='high-light color-white'>Description</p>
             <div className='description-panel'>
             
             
@@ -73,29 +73,20 @@ const Item = ({ item }) => {
            
             
         </div>
+        <div className='Item-panel-3'>
+        Panel 3
+        </div>
         
     </div>
     <div className='secoundary-panel'>
     
    
-    <p className='high-light'>Add On's</p>
-    <Carousel itemsToShow={4}>
-                <Subcard/>
-                <Subcard/>
-                <Subcard/>
-                <Subcard/>
-                <Subcard/>
-                <Subcard/>
-                <Subcard/>
-                <Subcard/>
-                <Subcard/>
-
-    </Carousel>
+    
     <br></br>
     <div className='line'></div>
     <br></br>
     
-        <Mainmenu/>
+    <Mainmenu Items={addonItem}/>
     
     <br></br>
     </div>

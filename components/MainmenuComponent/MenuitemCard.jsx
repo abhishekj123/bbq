@@ -1,20 +1,26 @@
 import React from 'react'
 import Image from 'next/image'
 
-const MenuitemCard = () => {
+const MenuitemCard = (props) => {
   return (
     <div className='Subcard-panel'>
     <div className='Subcard-panel-1'>
     <Image
-            src='https://firebasestorage.googleapis.com/v0/b/restuarantsig.appspot.com/o/restimage%2FNoodles3.png?alt=media&token=5e02bda3-0ad0-40a5-aa45-46541fd28a55'
+            src={props.pic}
             alt="Picture of the author"
-            width="200px"
-            height="200px"
+            width="300px"
+            height="300px"
     />
     </div>
     <div className='Subcard-panel-2'>
-      <div>Description</div>
-      <div>Add to cart</div>
+    <a href={'http://localhost:3000/items/'+`${props.id}`}>
+      <div className='Subcard-Heading'><h1>{props.name}</h1></div>
+      <div className='Subcard-price'>$ 37.99</div>
+      <div className='Subcard-Description'>{props.desc}</div>
+      </a>
+    </div>
+    <div className='Subcard-panel-3'>
+      <button>Add to Card</button>
     </div>
     
     

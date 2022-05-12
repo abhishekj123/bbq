@@ -1,5 +1,5 @@
 import React , { useEffect , useState } from 'react'
-import { Navbar , Menu , Gallery } from '../components/components' 
+import { Navbar , Mainmenu } from '../components/components' 
 import axios from 'axios'
 import Image from 'next/image'
 import { usePagination } from '@mui/material/Pagination';
@@ -35,6 +35,11 @@ const Ordernow = () => {
   return (
     <div>
         <Navbar/>
+        <div className='secoundary-panel'>
+        
+            <Mainmenu Items={orderItem}/>
+        </div>
+        
         <div className='Order-panel'>
             <div className='Order-Panel-1'>Hi</div>
             <div className='Order-Panel-2'>

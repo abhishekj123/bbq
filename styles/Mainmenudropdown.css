@@ -1,0 +1,68 @@
+.Main-menu-dropdown{
+    background: white;
+    border-radius: 12px;
+    margin-top: 1rem;
+    padding: 0.1rem;
+}
+
+
+
+.Main-menu-Subpanel-details-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 4fr 1fr;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    background: white;
+    border: 2px solid rgb(255, 224, 167);
+    border-radius: 8px;
+    border: none;
+}
+
+
+
+.Menu-Subpanel-details-option-label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Menu-Subpanel-details-option-expand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(0, 255, 47);
+    border-radius: 20px;
+}
+
+.Main-dropdown-sub-Option-Panel{
+    
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+    
+    
+}
+
+
+
+
+.Main-menu-Subpanel-details-option button:focus{
+    background:olive;
+}
+
+.Main-dropdown-sub-Option-Panel button{
+    
+    border: none;
+}
+
+.Main-dropdown-sub-Option-Panel button:focus{
+    background:orange;
+    padding: 0.5rem;
+    border: none;
+    outline:0;
+    width: 80%;
+    border-radius: 12px;
+}

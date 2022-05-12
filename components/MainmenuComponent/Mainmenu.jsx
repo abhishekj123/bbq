@@ -1,7 +1,18 @@
 import React from 'react'
-import { MenuitemCard } from '../../components/components' 
+import { MenuitemCard , Menusubpanel, Mainmenudropdown } from '../../components/components' 
 
-const Mainmenu = () => {
+const Mainmenu = (props) => {
+
+  let option = [
+    {
+        title:'VEG',
+        subOption:['Battora','Chana Battura']
+    },
+    {
+      title:'Non Veg',
+      subOption:['Bririyani','hocho']
+  }
+]  
 
     let menuItem=["Shawarma               "
     ,"Hot Treats             "
@@ -21,29 +32,29 @@ const Mainmenu = () => {
     <div className='Mainmenu'>
     <div className='menu-panel-1'>
         {
-            menuItem.map(item => 
-             <h1>{item}</h1>   
+          option.map(item => 
+              <Mainmenudropdown subTitle={item.title} subOptions={item.subOption}/>
                 
                 )
         }
     </div>
     <div className='menu-panel-2'>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
-        <MenuitemCard/>
+    {
+      props.Items.map(item => 
+         
+          <MenuitemCard 
+            name={item.title} 
+            desc={item.description} 
+            id={item._id} 
+            price={item.price}
+            pic={item.pic}
+            
+            />
+          )
+  }
+        
     </div>
-    <div className='menu-panel-3'>
-        <h1>My Cart </h1>
-    </div>
+    
     </div>
   )
 }
