@@ -21,6 +21,14 @@
   --from: #3cffd0;
   --to: #277ef4;
 
+  --bg:  #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms; 
+
 
 }
 
