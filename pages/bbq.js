@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { Navbar , Menu , Gallery } from '../components/components' 
+import { Navbar , Menu  } from '../components/components' 
 
 const bbq = () => {
   return (
@@ -175,7 +175,7 @@ const bbq = () => {
                 </div>
                 <div id="gallery" className='Menu-info'>
                     <h1 className='bbq-text-heading-1'>GALLERY</h1>
-                    <Gallery/>
+                    
                 </div>
                 <div id="about" className='Menu-info'>
                     <h1 className='bbq-text-heading-1'>ABOUT RESTAURANT</h1>

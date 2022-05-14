@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar ,Menu,  Banner , Special , Imageslider , ImageSlide , Slider , Location , Animate} from '../components/components'
+import { Navbar ,Menu , Special , Imageslider , ImageSlide , Slider , Location , Animate} from '../components/components'
 
 
 
@@ -8,7 +8,7 @@ const Home = () => {
     <div>
     <Menu/>
     <Navbar/>
-    <Banner/>
+    {/*<Banner/>*/}
     <Special/>
     {/* <Imageslider/> */}
     

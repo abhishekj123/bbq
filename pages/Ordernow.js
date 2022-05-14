@@ -35,11 +35,11 @@ const Ordernow = () => {
   return (
     <div>
         <Navbar/>
-        <div className='secoundary-panel'>
+        <div >
         
             <Mainmenu Items={orderItem}/>
         </div>
-        
+        {/** 
         <div className='Order-panel'>
             <div className='Order-Panel-1'>Hi</div>
             <div className='Order-Panel-2'>
@@ -69,6 +69,7 @@ const Ordernow = () => {
             
             
         </div>
+        */}
     </div>
   )
 }

@@ -48,6 +48,10 @@ const Mainmenu = (props) => {
   }
         
     </div>
+
+    <div className='menu-panel-3'>
+    Hello
+    </div>
     
     </div>
   )
@@ -91,43 +95,33 @@ const DropdownMenu = () => {
       <DropdownItem
         
        
-        goToMenu="settings">
-        Veg Starters
+        goToMenu="Veg">
+        Veg
       </DropdownItem>
       <DropdownItem
         
        
-      goToMenu="settings">
-      Non Veg Starters
+      goToMenu="Non-Veg">
+      Non Veg 
     </DropdownItem>
-      <DropdownItem
-        
-       
-        goToMenu="settings">
-        Veg Main 
-      </DropdownItem>
+     
+     
       <DropdownItem
         leftIcon="🦧"
-        
-        goToMenu="animals">
-        Non Veg Main
-      </DropdownItem>
-      <DropdownItem
-        leftIcon="🦧"
-        goToMenu="animals">
+        goToMenu="Deserts">
         Deserts
       </DropdownItem>
       <DropdownItem
         leftIcon="🦧"
-        goToMenu="animals">
+        goToMenu="Beverages">
         Beverages
       </DropdownItem>
 
     </div>
   </CSSTransition>
 
-  <CSSTransition
-        in={activeMenu === 'settings'}
+        <CSSTransition
+        in={activeMenu === 'Veg'}
         timeout={500}
         classNames="menu-secondary"
         unmountOnExit
@@ -136,10 +130,54 @@ const DropdownMenu = () => {
           <DropdownItem goToMenu="main" leftIcon={<FontAwesomeIcon icon={faCircleLeft} size="2x" className="highlight" />}>
             Go Back
           </DropdownItem>
-          <DropdownItem leftIcon='doosh'>HTML</DropdownItem>
-          <DropdownItem leftIcon='doosh'>CSS</DropdownItem>
-          <DropdownItem leftIcon='doosh'>JavaScript</DropdownItem>
-          <DropdownItem leftIcon='doosh'>Awesome!</DropdownItem>
+          <DropdownItem leftIcon='doosh'>Veg Starters</DropdownItem>
+          <DropdownItem leftIcon='doosh'>Veg Main</DropdownItem>
+        </div>
+      </CSSTransition>
+      <CSSTransition
+        in={activeMenu === 'Non-Veg'}
+        timeout={500}
+        classNames="menu-secondary"
+        unmountOnExit
+        onEnter={calcHeight}>
+        <div className="menu">
+          <DropdownItem goToMenu="main" leftIcon={<FontAwesomeIcon icon={faCircleLeft} size="2x" className="highlight" />}>
+            Go Back
+          </DropdownItem>
+          <DropdownItem leftIcon='doosh'>Veg Main</DropdownItem>
+          <DropdownItem leftIcon='doosh'>Non Veg Main</DropdownItem>
+         
+        </div>
+      </CSSTransition>
+      <CSSTransition
+        in={activeMenu === 'Deserts'}
+        timeout={500}
+        classNames="menu-secondary"
+        unmountOnExit
+        onEnter={calcHeight}>
+        <div className="menu">
+          <DropdownItem goToMenu="main" leftIcon={<FontAwesomeIcon icon={faCircleLeft} size="2x" className="highlight" />}>
+            Go Back
+          </DropdownItem>
+          <DropdownItem leftIcon='doosh'>IceCream</DropdownItem>
+          <DropdownItem leftIcon='doosh'>Shake</DropdownItem>
+          <DropdownItem leftIcon='doosh'>Cake</DropdownItem>
+          <DropdownItem leftIcon='doosh'>Pudding</DropdownItem>
+         
+        </div>
+      </CSSTransition>
+      <CSSTransition
+        in={activeMenu === 'Beverages'}
+        timeout={500}
+        classNames="menu-secondary"
+        unmountOnExit
+        onEnter={calcHeight}>
+        <div className="menu">
+          <DropdownItem goToMenu="main" leftIcon={<FontAwesomeIcon icon={faCircleLeft} size="2x" className="highlight" />}>
+            Go Back
+          </DropdownItem>
+          <DropdownItem leftIcon='doosh'>Alcoholic</DropdownItem>
+          <DropdownItem leftIcon='doosh'>Non-Alcoholic</DropdownItem>
         </div>
       </CSSTransition>
     

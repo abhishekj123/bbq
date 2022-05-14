@@ -151,3 +151,65 @@
   transform: translateX(110%);
   transition: all var(--speed) ease;
 }
+
+
+@media screen and (max-width:1050px) and (min-width:550px){
+
+  .Mainmenu{
+    
+    display: grid;
+    grid-template-columns: 0.8fr 2fr;
+    grid-gap: 2px;
+}
+
+.menu-panel-1{
+  padding: 1rem;
+  background: rgb(255, 232, 189);
+  border-radius: 12px;
+  width: 100%;
+  
+}
+
+.menu-panel-2{
+  padding: 0rem;
+  
+  
+}
+
+.menu-panel-3{
+  display: none;
+}
+
+.dropdown {
+    
+  width: 100%;
+  transform: translateX(0%);
+  background-color: white;
+  
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: height var(--speed) ease;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+}
+
+@media screen and (max-width:630px){
+  .menu-panel-1{
+    display: none;
+    
+  }
+
+  .Mainmenu{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    padding: 1rem;
+    
+}
+  
+}
