@@ -16,10 +16,12 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import RestoreIcon from '@mui/icons-material/Restore';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-brands-svg-icons"
 
+const Mobilebottommenubar = () => {
 
-export default function TemporaryDrawer() {
-  const [value, setValue] = React.useState(0);
+    const [value, setValue] = React.useState(0);
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -83,9 +85,10 @@ export default function TemporaryDrawer() {
         <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
         <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
         <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} ></BottomNavigationAction>
-        {['left'].map((anchor) => (
+        {['bottom'].map((anchor) => (
           <React.Fragment key={anchor}>
-            <Button onClick={toggleDrawer(anchor, true)}><BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} ></BottomNavigationAction></Button>
+            <h1 onClick={toggleDrawer(anchor, true)}>hello</h1>
+            <button className='btn-solid' onClick={toggleDrawer(anchor, true)}><FontAwesomeIcon icon={faLocationDot} size="6x" /></button>
             <Drawer
               anchor={anchor}
               open={state[anchor]}
@@ -99,5 +102,7 @@ export default function TemporaryDrawer() {
     </Box>
      
     </div>
-  );
+  )
 }
+
+export default Mobilebottommenubar

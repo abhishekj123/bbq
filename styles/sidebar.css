@@ -1,0 +1,79 @@
+.Sidebar{
+    background: white;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    max-width: 400px;
+    width: 70%;
+    z-index: 200;
+    padding: 2rem;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-out;
+}
+
+.Sidebar.open{
+    transform: translateX(0);
+}
+
+.Sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.Sidebar a {
+    
+    text-decoration: none;
+}
+
+.backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 100;
+    top:0;
+    left: 0;
+    z-index: 100;
+}
+
+.Sign-User-Auth{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.Sign-User-Auth button{
+    background: Orange;
+    padding: 0.7rem;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Sidepanel-icon-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    background: rgb(249, 127, 127);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.icon-highlight{
+    color: white;
+}
+
+.icon-desc{
+    color: rgb(135, 135, 135);
+    font-size: 17px;
+    font-weight: 500;
+}

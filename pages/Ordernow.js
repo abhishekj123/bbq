@@ -1,5 +1,5 @@
 import React , { useEffect , useState } from 'react'
-import { Navbar , Mainmenu } from '../components/components' 
+import { Navbar , Mainmenu , Mobilebottommenubar , Drawertogglebutton , Sidebar , Backdrop } from '../components/components' 
 import axios from 'axios'
 import Image from 'next/image'
 import { usePagination } from '@mui/material/Pagination';
@@ -10,7 +10,7 @@ const Ordernow = () => {
     const [orderItem, setorderItem] = useState([])
     const [page, setPage] = useState(0)
 
-   
+    const [sideDrawerOpen, setsideDrawerOpen] = useState(false)
 
     useEffect(() => {
 
@@ -32,44 +32,34 @@ const Ordernow = () => {
     }, [page])
     
 
+    const drawerToggleClickHandler = () => {
+        setsideDrawerOpen(!sideDrawerOpen)
+    }
+
+    const backdropClickHandler = () => {
+        setsideDrawerOpen(false)
+    }
+
+    let sideBar;
+    let backdrop;
+
+    if(sideDrawerOpen){
+        
+        backdrop= <Backdrop click={backdropClickHandler}/>
+    }
+
   return (
-    <div>
+    <div style={{height: '100%'}}>
         <Navbar/>
         <div >
         
             <Mainmenu Items={orderItem}/>
-        </div>
-        {/** 
-        <div className='Order-panel'>
-            <div className='Order-Panel-1'>Hi</div>
-            <div className='Order-Panel-2'>
-                <div className='Order-Item-Panel'>
-            
-            {
-                orderItem.map(a => 
-                   
-                    <ItemCard name={a.title} desc={a.description} id={a._id}/>
-                    )
-            }
-            
-                </div>
-            <div className='Paginate-panel'>
-                
-                <Pagination 
-                    count={10} 
-                    variant="outlined" 
-                    color="secondary" 
-                    defaultPage={page}
-                    onChange={(event, value) => setPage(value)}
-                    />
-            </div>
-            
-            
-            </div>
-            
+            <Sidebar show={sideDrawerOpen}/>
+            {backdrop}
+            <Drawertogglebutton drawerClickHandler={drawerToggleClickHandler}/> 
             
         </div>
-        */}
+       
     </div>
   )
 }

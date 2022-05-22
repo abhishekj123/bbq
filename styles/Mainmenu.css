@@ -1,8 +1,12 @@
+
+
 .Mainmenu{
     
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 16px;
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 .menu-panel-1{
@@ -72,7 +76,7 @@
 
   .dropdown {
     
-    width: 300px;
+    width: fit;
     transform: translateX(0%);
     background-color: white;
     
@@ -208,8 +212,13 @@
     display: grid;
     grid-template-columns: 1fr;
     
-    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     
+}
+
+.menu-panel-3{
+  display: none;
 }
   
 }

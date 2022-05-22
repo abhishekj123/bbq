@@ -15,10 +15,13 @@ const Navbar = () => {
   return (
     
     <nav className="Navbar section__padding">
-      
+          
           <div className='Navbar-links'>
+          <a href='/'>
             <h1>BBQ-<i>Nation</i></h1>
+            </a>
           </div>
+          
           <div className='Navbar-menu-container'>
             <Menu/>
           </div>

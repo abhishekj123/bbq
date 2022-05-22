@@ -1,7 +1,8 @@
-import React, { useState , useRef } from 'react'
-import { MenuitemCard , Menusubpanel, Mainmenudropdown } from '../../components/components' 
+import React, { useState, useRef } from 'react'
 import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faCircleLeft } from "@fortawesome/free-regular-svg-icons"
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-regular-svg-icons"
 import { faCircleLeft } from "@fortawesome/free-regular-svg-icons"
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
@@ -17,60 +18,29 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 
 
-const Mainmenu = (props) => {
+const Sidebar = (props) => {
 
-  let option = [
-    {
-        title:'VEG',
-        subOption:['Battora','Chana Battura']
-    },
-    {
-      title:'Non Veg',
-      subOption:['Bririyani','hocho']
+  let drawerClasses = 'Sidebar'
+
+  if(props.show) {
+    drawerClasses = 'Sidebar open'
+
   }
-]  
-
-   
-
   return (
-    
-    <div className='Mainmenu'>
-    <div className='menu-panel-1'>
-    
-    
-    <div className='drop-down-outer'>
-    
+    <div className={drawerClasses}>
+    <div className='Sign-User-Auth'>
+        <a href='/SignIn' ><button>SignIn</button></a>
+        <a href='/SignUp' ><button>SignUp</button></a>
+    </div>
+    <hr></hr>
+    <br></br>
     <DropdownMenu/>
     </div>
-       
-    </div>
-    <div className='menu-panel-2'>
-    {
-      props.Items.map(item => 
-         
-          <MenuitemCard 
-            name={item.title} 
-            desc={item.description} 
-            id={item._id} 
-            price={item.price}
-            pic={item.pic}
-            
-            />
-          )
-  }
-        
-    </div>
-
-    <div className='menu-panel-3'>
-    Hello
-    </div>
-    
-    </div>
-    
   )
 }
 
-export default Mainmenu
+export default Sidebar
+
 
 
 

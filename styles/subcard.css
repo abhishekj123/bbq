@@ -42,13 +42,17 @@
 }
 
 .Subcard-panel-3 button{
-    font-size: small;
-    font-weight: 500;
-    background: orange;
-    padding: 0.8rem;
-    border-radius: 12px;
+    
+    background-color: white;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+   
 }
 
+.Mobile-icon{
+    background: orange;
+}
 
 @media screen and (max-width:1050px) and (min-width:550px){
 

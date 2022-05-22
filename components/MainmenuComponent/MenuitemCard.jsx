@@ -1,7 +1,31 @@
 import React from 'react'
 import Image from 'next/image'
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import IconButton from '@mui/material/IconButton';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MenuitemCard = (props) => {
+
+  const theme = createTheme({
+    components: {
+      // Name of the component
+      MuiButton: {
+        styleOverrides: {
+          // Name of the slot
+          root: {
+            // Some CSS
+            
+            color:'#ffffff'
+          },
+        },
+      },
+    },
+  });
+
   return (
     <div className='Subcard-panel'>
     <div className='Subcard-panel-1'>
@@ -20,7 +44,11 @@ const MenuitemCard = (props) => {
       </a>
     </div>
     <div className='Subcard-panel-3'>
-      <button>Add to Card</button>
+    
+    <button className='btn-blank'><FontAwesomeIcon icon={faCartPlus} size="2x" className="highlight"/></button>
+    
+   
+    
     </div>
     
     
