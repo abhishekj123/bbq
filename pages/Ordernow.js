@@ -67,26 +67,3 @@ const Ordernow = () => {
 export default Ordernow
 
 
-const ItemCard = (props) => {
-    return (
-    <div className='ItemCard'>
-    <a href={'http://localhost:3000/items/'+`${props.id}`}>
-    <Image
-      src="https://firebasestorage.googleapis.com/v0/b/restuarantsig.appspot.com/o/restimage%2FNoodles3.png?alt=media&token=5e02bda3-0ad0-40a5-aa45-46541fd28a55"
-      alt="Picture of the author"
-      width="350px"
-      height="200px"
-    />
-    <div className='ItemCard-Title'>
-        <h1 className='bbq-text-heading-1'>{props.name}</h1>
-    </div>
-    <div className='ItemCard-Desc'>
-        <p className='desc-limit'>{props.desc}</p>
-    </div>
-    <div className='ItemCard-Bottom'>
-        <button>Add to Cart</button>
-    </div>
-    </a>
-    </div>
-    )
-}

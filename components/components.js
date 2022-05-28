@@ -10,3 +10,4 @@ export { default as Mobilebottommenubar } from './MobileMenu/Mobilebottommenubar
 export { default as Drawertogglebutton } from './SiderbarComponent/Drawertogglebutton'
 export { default as Sidebar } from './SiderbarComponent/Sidebar'
 export { default as Backdrop } from './SiderbarComponent/Backdrop'
+export { default as Cart } from './CartComponent/Cart'

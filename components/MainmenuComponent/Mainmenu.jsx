@@ -1,5 +1,5 @@
 import React, { useState , useRef } from 'react'
-import { MenuitemCard , Menusubpanel, Mainmenudropdown } from '../../components/components' 
+import { MenuitemCard , Menusubpanel, Mainmenudropdown , Cart } from '../../components/components' 
 import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-regular-svg-icons"
@@ -14,22 +14,16 @@ import { faBeerMug } from "@fortawesome/free-solid-svg-icons";
 import { faCakeCandles } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
-
+import { useSelector , useDispatch  } from 'react-redux'
+import { altercarteobj } from "../../actions"
 
 
 const Mainmenu = (props) => {
 
-  let option = [
-    {
-        title:'VEG',
-        subOption:['Battora','Chana Battura']
-    },
-    {
-      title:'Non Veg',
-      subOption:['Bririyani','hocho']
-  }
-]  
+  const dispatch = useDispatch()
 
+ 
+ 
    
 
   return (
@@ -54,7 +48,8 @@ const Mainmenu = (props) => {
             id={item._id} 
             price={item.price}
             pic={item.pic}
-            
+            title={item.title}
+            status={item.status}
             />
           )
   }
@@ -62,7 +57,8 @@ const Mainmenu = (props) => {
     </div>
 
     <div className='menu-panel-3'>
-    Hello
+    <Cart/>
+    
     </div>
     
     </div>

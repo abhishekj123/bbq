@@ -3,7 +3,7 @@
 .Mainmenu{
     
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 0.8fr 2fr 1.2fr;
     grid-gap: 16px;
     margin-left: 6rem;
     margin-right: 6rem;
@@ -29,7 +29,7 @@
 
 
 /* width */
-::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 10px;
   }
   
@@ -175,7 +175,7 @@
 }
 
 .menu-panel-2{
-  padding: 0rem;
+  padding: 1rem;
   
   
 }
@@ -196,7 +196,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 1px;
+  width: 4px;
 }
 
 }

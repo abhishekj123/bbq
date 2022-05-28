@@ -19,16 +19,21 @@ import "../styles/home.css";
 import "../styles/sidebar.css";
 import "../styles/Menuitemcard.css";
 import "../styles/Mainmenu.css";
+import "../styles/cart.css";
 import "../styles/Mainmenudropdown.css";
 import '../styles/styles.module.css'
 import type { AppProps } from 'next/app'
 import "@material-tailwind/react/tailwind.css";
 import { SessionProvider } from "next-auth/react"
+import { Provider } from 'react-redux'
+import myStore from '../reducers/store'
 
 function MyApp({ Component, pageProps: {session, ...pageProps} }: AppProps) {
   return ( 
     <SessionProvider session={session}>
+      <Provider store={myStore}>
       <Component {...pageProps} />
+      </Provider>
     </SessionProvider>
   )
 }
